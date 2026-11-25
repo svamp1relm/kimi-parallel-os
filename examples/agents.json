@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "project": "/absolute/path/to/your/project",
+  "max_parallel": 2,
+  "tasks": [
+    {
+      "id": "backend",
+      "prompt": "Прочитай AGENTS.md и реализуй backend-часть согласованной задачи. Работай только в разрешённых путях. В конце перечисль изменённые файлы и проверки.",
+      "allowed_paths": [
+        "src/backend",
+        "tests/backend"
+      ]
+    },
+    {
+      "id": "frontend",
+      "prompt": "Прочитай AGENTS.md и реализуй frontend-часть согласованной задачи. Не изменяй backend и общие контракты без отдельного решения. В конце перечисль изменённые файлы и проверки.",
+      "allowed_paths": [
+        "web"
+      ]
+    },
+    {
+      "id": "docs",
+      "prompt": "Обнови документацию по уже согласованному решению. Не изменяй production-код, не коммить и не пушь.",
+      "allowed_paths": [
+        "docs"
+      ]
+    }
+  ]
+}

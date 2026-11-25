@@ -1,0 +1,12 @@
+.venv/
+.bootstrap-venv/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+__pycache__/
+*.py[cod]
+.parallel_agentic_os/
+dist/
+build/
+*.egg-info/

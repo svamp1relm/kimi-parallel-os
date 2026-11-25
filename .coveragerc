@@ -1,0 +1,11 @@
+[run]
+parallel = True
+source = src
+branch = True
+omit =
+    src/parallel_agentic_os/__main__.py
+    src/parallel_agentic_os/worker.py
+
+[report]
+show_missing = True
+skip_covered = False
